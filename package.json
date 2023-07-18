@@ -35,7 +35,7 @@
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.2",
     "@types/jasmine": "~3.10.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.55",
     "autoprefixer": "^10.4.7",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.0",
