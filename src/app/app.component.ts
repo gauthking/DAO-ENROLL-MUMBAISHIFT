@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import contractAddress from '../../env/contractAddress.json';
+import { environment } from '../environments/environment';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +7,5 @@ import contractAddress from '../../env/contractAddress.json';
 })
 export class AppComponent {
   title = 'Angular-Ethers-Hardhat-Template';
-  public address:any = contractAddress.Contract;
+  public address: any = environment.Contract;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import contractAddress from '../../../env/contractAddress.json';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import contractAddress from '../../../env/contractAddress.json';
 })
 export class HomeComponent implements OnInit {
 
-  public address:any = contractAddress.Contract;
+  public address: any = environment.Contract;
   constructor() { }
   ngOnInit(): void {
   }

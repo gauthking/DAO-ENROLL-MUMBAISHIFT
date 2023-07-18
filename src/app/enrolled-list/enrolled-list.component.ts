@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ethers } from 'ethers';
-import Contract from '../../../env/contractAddress.json';
+import { environment } from '../../environments/environment';
 import DAO from '../../../blockchain/artifacts/blockchain/contracts/Database.sol/Database.json';
 const fs = require('fs')
 @Component({
@@ -9,14 +9,14 @@ const fs = require('fs')
   styles: [],
 })
 export class EnrolledListComponent implements OnInit {
-  public provider: any = new ethers.providers.JsonRpcProvider(Contract.MumbaiGateway)
+  public provider: any = new ethers.providers.JsonRpcProvider(environment.MumbaiGateway)
   public DAOInterface: any;
   public data: any;
   public emails: any;
   public isLoading: boolean = true;
   constructor() {
     this.DAOInterface = new ethers.Contract(
-      Contract.Contract,
+      environment.Contract,
       DAO.abi,
       this.provider
     );
