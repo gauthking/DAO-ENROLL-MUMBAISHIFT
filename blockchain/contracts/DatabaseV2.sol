@@ -127,5 +127,14 @@ contract MembersDATA{
         allMembers.pop();
     }
 
-
+    function Enrolled(address check)public view returns(bool)
+    {
+        if(isEnrolled[check] == true)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }  
+    }
 }
