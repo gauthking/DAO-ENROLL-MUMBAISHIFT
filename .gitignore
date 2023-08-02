@@ -45,5 +45,6 @@ testem.log
 Thumbs.db
 
 # Angular specific files/directories
-/src/environments/environment.ts
-/src/environments/environment.prod.ts
+/src/environments/*
+!/src/environments/environment.ts
+!/src/environments/environment.prod.ts
